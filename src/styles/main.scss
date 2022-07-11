@@ -1,7 +1,26 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+@import "./blocks/button.scss";
+
+@import "./blocks/container.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  &--with-menu {
+    overflow: hidden;
+  }
+}
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
